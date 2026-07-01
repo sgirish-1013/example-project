@@ -25,6 +25,7 @@ app.use(session({
 
 app.use("/api", chatRoutes);
 
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
