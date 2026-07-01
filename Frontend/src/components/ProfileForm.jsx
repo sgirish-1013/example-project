@@ -17,7 +17,7 @@ export default function ProfileForm({ onProfileSet }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const toggleGenre = (genre) => {
+  let toggleGenre = (genre) => {
     setForm((prev) => ({
       ...prev,
       genres: prev.genres.includes(genre)
